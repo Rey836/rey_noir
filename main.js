@@ -567,7 +567,7 @@ window.addEventListener("load", () => {
 });
 
 
-   //GITHUB REPOS — auto-load from Rey836
+   //GITHUB REPOS 
 const LANG_COLORS = {
   JavaScript: "#f7df1e",
   TypeScript: "#3178c6",
@@ -687,7 +687,7 @@ async function loadGithubRepos() {
     // Add new repo cards
     json.repos
       .filter((r) => !r.fork)
-      .slice(0, 8)
+      .slice(0, 4)
       .forEach((repo, i) => {
         grid.insertAdjacentHTML("beforeend", buildRepoCard(repo, i));
       });
